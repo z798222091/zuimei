@@ -19,7 +19,6 @@
         mounted(){
            new Swiper('.swiper-container', {
             loop: true,
-            // If we need pagination
             pagination: '.swiper-pagination',
           });
         },
@@ -29,5 +28,5 @@
     }
 </script>
 <style scoped>
-  img{width: 100%}
+  img{width: 100%;height:180px}
 </style>

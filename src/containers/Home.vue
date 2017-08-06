@@ -1,10 +1,10 @@
 <template>
     <div>
-      <m-header title="我的书城"></m-header>
+      <m-header title="最美瞬间"></m-header>
       <div v-if="sliders.length">
         <slider :data="sliders"></slider>
       </div>
-      <h3>最新上架</h3>
+      <h3>最新上传</h3>
       <ul class="hot">
         <li v-for="hot in hots">
           <img :src="hot.bookCover" alt="">
@@ -29,7 +29,7 @@
         },
         created(){
           getSliders().then(res=>{
-              this.sliders = res.data; //将获取的数据放到sliders数组中
+              this.sliders = res.data;
           }).catch(err=>{
               console.log(err);
           });
@@ -54,7 +54,7 @@
       align-items: center;
       flex-direction: column;
       width: 33.333%;
-      img{width: 80%;}
+      img{width: 80%; height:100px;}
     }
   }
 </style>

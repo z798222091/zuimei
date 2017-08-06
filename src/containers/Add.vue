@@ -3,19 +3,19 @@
       <m-header title="添加页面"></m-header>
       <div class="add">
         <div class="group">
-          <label for="bookName">书名</label>
-          <input type="text" id="bookName" placeholder="请输入书名" v-model="book.bookName">
+          <label for="bookName">美的定义</label>
+          <input type="text" id="bookName" placeholder="请输入名字" v-model="book.bookName">
         </div>
         <div class="group">
-          <label for="bookName">书的地址</label>
-          <input type="text" id="bookCover" placeholder="请输入书的封面" v-model="book.bookCover">
+          <label for="bookName">照片地址</label>
+          <input type="text" id="bookCover" placeholder="请输入照片的路径" v-model="book.bookCover">
         </div>
         <div class="group">
-          <label for="content">书的详情</label>
-          <input type="text" id="content" placeholder="请输入书的详细内容" v-model="book.content">
+          <label for="content">关于美的描述</label>
+          <input type="text" id="content" placeholder="请输入详细内容" v-model="book.content">
         </div>
         <div class="group">
-          <button @click="add">添加图书</button>
+          <button @click="add">添加照片</button>
         </div>
       </div>
     </div>

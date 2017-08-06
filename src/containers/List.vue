@@ -41,18 +41,15 @@
             },
             remove(id){
               removeBook(id).then(res=>{
-                  //前台删除成功 将此项在页面中移除掉
                 this.books = this.books.filter(item=>item.id!=id);
               });
             },
             refresh(){
-                //获取最新数据
               this.getList();
             },
             getList(){
               getBook().then(res=>{
-                this.books = res.data;//读取所有图书放到数组中
-                //加载数据后 获取scroller 调用 finishPullToRefresh
+                this.books = res.data;
                 this.$refs.scroller.finishPullToRefresh();
               });
             }
@@ -77,6 +74,7 @@
       h3{color: #666666;margin: 5px;}
       display: flex;
       flex-direction: column;
+      width:150px;
     }
   }
   img[lazy="loading"]{
